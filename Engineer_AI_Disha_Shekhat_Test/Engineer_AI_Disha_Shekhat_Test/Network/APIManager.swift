@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 class APIManager {
-
+    
     var header = ["Content-Type":"application/json"]
     
     static let shared : APIManager = {

@@ -10,10 +10,10 @@ import UIKit
 
 final class ListTableCell: UITableViewCell {
 
+    // MARK: - IBOutlet
     @IBOutlet private weak var labelTitle: UILabel!
     @IBOutlet private weak var labelDate: UILabel!
     @IBOutlet private weak var switchToggle: UISwitch!
-    
     
     var hit: Hits? {
         didSet {

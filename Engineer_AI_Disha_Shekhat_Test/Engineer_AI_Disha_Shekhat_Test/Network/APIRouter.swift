@@ -16,12 +16,10 @@ protocol Routable {
 }
 
 enum APIRouter: Routable {
-    
     case getListData(Int)
-    
 }
+
 extension APIRouter {
-    
     var path: String {
         var endPoint = ""
         switch self {
@@ -31,8 +29,8 @@ extension APIRouter {
         return "https://hn.algolia.com/api/v1/search_by_date?tags=story&" + endPoint
     }
 }
+
 extension APIRouter {
-    
     var method: HTTPMethod {
         switch self {
         case .getListData:
@@ -42,7 +40,6 @@ extension APIRouter {
 }
 
 extension APIRouter {
-    
     var parameters: Parameters? {
         switch self {
         case .getListData:

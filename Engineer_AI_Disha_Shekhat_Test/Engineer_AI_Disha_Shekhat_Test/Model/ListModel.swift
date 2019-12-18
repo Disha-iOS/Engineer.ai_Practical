@@ -32,7 +32,6 @@ class Hits: Codable {
     let title: String?
     var isSelected: Bool = false
     
-    
     enum CodingKeys: String, CodingKey {
         case createdDate = "created_at"
         case title = "title"
